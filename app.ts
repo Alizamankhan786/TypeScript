@@ -136,25 +136,156 @@
 
 
 
-type user = {
-    username : string;
-    email : string;
-    age : number;
-    isLoggesIn : boolean;
-    lastName? : string;
-}
+// type user = {
+//     username : string;
+//     email : string;
+//     age : number;
+//     isLoggesIn : boolean;
+//     lastName? : string;
+// }
 
-const user: user = {
-    username : `Ali`,
-    email : `abc@gmail.com`,
-    age : 20,
-    isLoggesIn : true,
-
-
-}
+// const user: user = {
+//     username : `Ali`,
+//     email : `abc@gmail.com`,
+//     age : 20,
+//     isLoggesIn : true,
 
 
-user.lastName = `Zaman`
+// }
+
+
+// user.lastName = `Zaman`
+
+
+
+                                 // Interfaces vs Type Aliases
+
+
+// interface DEF: Ziyada tar hum interface use karainge phehle hum interface mai un sab cheezon ki type define karainge phr us k 2 interface mai jo add karwana hai jaise price wagera woh likhainge type k sath phr const ya let s variable bnaega jis k andr sab k naam aainge
+
+
+
+// type user = {
+//     username : string;
+//     age : number;
+// }
+
+
+// interface user {
+
+//     username : string;
+//     age : number;
+
+// }
+
+// interface user {
+//     lastName : string;
+// }
+
+// const user: user = {
+
+//     username: `Ali`,
+//     age: 20,
+//     lastName: `zaman`,
+
+// }
+
+
+
+// interface fruits {
+//     fruitName: string;
+//     price: number;
+//     state: string;
+// }
+
+
+// interface fruits {
+//     type: string;
+// }
+
+
+// let fruits:fruits = {
+//     fruitName: `mango`,
+//     price: 1000,
+//     state: `Balochistan`,
+//     type: `chausa`,
+// }
+
+
+
+
+// interface electronics {
+//     brand: string;
+//     price: number;
+//     tag: string;
+// }
+
+// interface electronics {
+//     type: string;
+// }
+
+
+// let electronics: electronics = {
+//     brand: `samsung`,
+//     price: 25000,
+//     tag: `mobile`,
+//     type: `innerPhone`,
+// }
+
+
+
+                                      //Enums
+
+
+// enum cardinalDirection {
+//     north,
+//     south,
+//     east,
+//     west,
+// }
+
+// let currentDirection = cardinalDirection.north;
+// console.log(cardinalDirection);
+
+
+// enum StatusCodes {
+//     NotFound = 404,
+//     Success = 200,
+//     Accepted = 202,
+//     BadRequest = 400,
+// }
+
+
+// let currentStatus = StatusCodes.NotFound
+// console.log(StatusCodes);
+
+
+
+                                       //Generics
+
+
+
+// function identity(arg: any): any {
+//   return [arg];
+// }
+
+// console.log(identity("abd"));
+
+
+// function identity(arg: any) : any {
+//     return[arg];
+// }
+
+// console.log(identity(`cdb`));
+
+
+// function identity(arg : any) : any{
+//     return[arg];
+// }
+
+// console.log(identity(`Ali`));
+
+
 
 
 
